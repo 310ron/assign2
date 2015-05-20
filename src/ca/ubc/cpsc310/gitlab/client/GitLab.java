@@ -68,6 +68,7 @@ public class GitLab implements EntryPoint {
 
 			@Override
 			public void onSuccess(List<IUser> result) {
+				Window.alert("Retrieved " +  result.size() + " entries");
 				displayUsers(result);
 			}});
 		
